@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Products - Waterman Purifiers</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f9f9;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-color: #0077b6;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      flex-grow: 1;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    h2 {
+      color: #0077b6;
+      margin-bottom: 1.5rem;
+      font-size: 2.4rem;
+      text-align: center;
+    }
+    .products-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .product-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      width: 300px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      height: 180px;
+    }
+    .product-name {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+    .price {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 0.3rem;
+    }
+    .offer-price {
+      font-size: 1.2rem;
+      color: #d32f2f;
+      font-weight: bold;
+      margin-bottom: 0.8rem;
+    }
+    .old-price {
+      text-decoration: line-through;
+      color: #999;
+      margin-left: 0.5rem;
+      font-weight: normal;
+      font-size: 1rem;
+    }
+    ul.specs {
+      text-align: left;
+      padding-left: 1.2rem;
+      font-size: 0.95rem;
+      color: #555;
+      margin: 0;
+    }
+    footer {
+      background-color: #0077b6;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Waterman Purifiers</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="product.html">Products</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Our Products</h2>
+    <div class="products-container">
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1582719478177-34a85b79bf49?auto=format&fit=crop&w=400&q=80" alt="Waterman RO Purifier" />
+        <div class="product-name">Waterman RO Purifier</div>
+        <div>
+          <span class="offer-price">₹9,499</span>
+          <span class="old-price">₹11,999</span>
+        </div>
+        <ul class="specs">
+          <li>7-stage RO+UV purification</li>
+          <li>Storage capacity: 10 liters</li>
+          <li>Energy efficient</li>
+          <li>Smart filter change alert</li>
+        </ul>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1560184897-cf0c5828f484?auto=format&fit=crop&w=400&q=80" alt="Waterman UV Purifier" />
+        <div class="product-name">Waterman UV Purifier</div>
+        <div>
+          <span class="offer-price">₹6,299</span>
+          <span class="old-price">₹7,999</span>
+        </div>
+        <ul class="specs">
+          <li>Advanced UV purification</li>
+          <li>Compact design for small kitchens</li>
+          <li>Removes bacteria & viruses</li>
+          <li>Low maintenance</li>
+        </ul>
+      </div>
+
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=400&q=80" alt="Waterman Gravity Purifier" />
+        <div class="product-name">Waterman Gravity Purifier</div>
+        <div>
+          <span class="offer-price">₹3,199</span>
+          <span class="old-price">₹4,499</span>
+        </div>
+        <ul class="specs">
+          <li>No electricity required</li>
+          <li>Gravity-based purification</li>
+          <li>High capacity storage</li>
+          <li>Easy to install & use</li>
+        </ul>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Waterman Purifiers. All rights reserved.
+  </footer>
+
+</body>
+</html>
