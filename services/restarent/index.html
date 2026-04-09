@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spice Delight Restaurant</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #fff8f2;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background: rgba(0,0,0,0.8);
+  color: white;
+  padding: 15px 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+header h1 {
+  display: inline;
+}
+
+nav {
+  float: right;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') no-repeat center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 50px;
+}
+
+.hero p {
+  margin: 15px 0;
+  font-size: 20px;
+}
+
+.btn {
+  background: #e63946;
+  padding: 12px 25px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 5px;
+  display: inline-block;
+}
+
+/* SECTION */
+section {
+  padding: 80px 50px;
+  text-align: center;
+}
+
+/* MENU */
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding-bottom: 15px;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+/* SPECIAL */
+.special {
+  background: #ffe5d9;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+/* GALLERY */
+.gallery img {
+  width: 30%;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+  max-width: 600px;
+  margin: auto;
+  font-style: italic;
+}
+
+/* CONTACT */
+.contact p {
+  margin: 10px 0;
+}
+
+footer {
+  background: #222;
+  color: #aaa;
+  padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Spice Delight</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h2>Delicious Food, Delivered Fast 🍔</h2>
+    <p>Fresh • Tasty • Affordable</p>
+    <a href="#menu" class="btn">View Menu</a>
+    <a href="#contact" class="btn">Order Now</a>
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="menu">
+  <h2>Our Menu</h2>
+  <div class="menu">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd">
+      <h3>Burger</h3>
+      <p>Juicy grilled burger with cheese</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1601924582975-7e6c7b1f5c29">
+      <h3>Pizza</h3>
+      <p>Wood-fired cheesy pizza</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1604908176997-431b77c8e0db">
+      <h3>Biryani</h3>
+      <p>Authentic spicy biryani</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+      <h3>Pasta</h3>
+      <p>Creamy Italian pasta</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- SPECIAL OFFER -->
+<section>
+  <div class="special">
+    <h2>🔥 Today's Special Offer</h2>
+    <p>Get 20% OFF on all orders above ₹499</p>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38">
+    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section>
+  <h2>Customer Reviews</h2>
+  <p class="testimonial">"Best food in town! Fast delivery and amazing taste 😍"</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Contact & Order</h2>
+  <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
+  <p><strong>Email:</strong> restaurant@example.com</p>
+  <p><strong>Location:</strong> Your City, India</p>
+
+  <!-- CALL -->
+  <a href="tel:+91XXXXXXXXXX" class="btn">Call Now</a>
+
+  <!-- WHATSAPP -->
+  <a href="https://wa.me/91XXXXXXXXXX" class="btn" style="background:#25D366;">WhatsApp</a>
+
+  <!-- EMAIL -->
+  <a href="mailto:restaurant@example.com" class="btn" style="background:#333;">Mail Now</a>
+</section>
+
+<footer>
+  <p>© 2026 Spice Delight Restaurant</p>
+</footer>
+
+</body>
+</html>
