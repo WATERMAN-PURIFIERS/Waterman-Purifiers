@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GlowUp Salon</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background: #111;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* NAV */
+nav {
+  background: #222;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  text-align: center;
+  padding: 80px 20px;
+  color: #222;
+}
+
+.hero h1 {
+  font-size: 42px;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 25px;
+  background: #111;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+/* SECTION */
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #111;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* CARD */
+.card {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* PRICE CARD */
+.price {
+  background: #ffe4e6;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+/* GALLERY */
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+  font-style: italic;
+  background: #f1f5f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>GlowUp Salon 💇‍♀️</h1>
+  <p>Style • Beauty • Confidence</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#services">Services</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+  <h1>Look Beautiful, Feel Confident ✨</h1>
+  <p>Professional Salon Services for You</p>
+
+  <a href="#contact" class="btn">Book Appointment</a>
+  <a href="https://wa.me/91XXXXXXXXXX" class="btn">WhatsApp</a>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>💇 Hair Styling</h3>
+      <p>Trendy cuts, styling & treatments</p>
+    </div>
+
+    <div class="card">
+      <h3>💆 Facial & Skin Care</h3>
+      <p>Glow treatments & skincare</p>
+    </div>
+
+    <div class="card">
+      <h3>💅 Manicure & Pedicure</h3>
+      <p>Complete nail care</p>
+    </div>
+
+    <div class="card">
+      <h3>🧖 Spa & Relaxation</h3>
+      <p>Relaxing spa therapies</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="pricing">
+  <h2>Pricing</h2>
+
+  <div class="grid">
+
+    <div class="price">
+      <h3>Haircut</h3>
+      <p>₹200 - ₹500</p>
+    </div>
+
+    <div class="price">
+      <h3>Facial</h3>
+      <p>₹500 - ₹1500</p>
+    </div>
+
+    <div class="price">
+      <h3>Manicure</h3>
+      <p>₹300</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>Our Work</h2>
+
+  <div class="grid gallery">
+    <img src="https://via.placeholder.com/300">
+    <img src="https://via.placeholder.com/300">
+    <img src="https://via.placeholder.com/300">
+  </div>
+</section>
+
+<section>
+  <h2>Customer Reviews</h2>
+
+  <div class="grid">
+    <div class="testimonial">"Amazing service! Loved my haircut."</div>
+    <div class="testimonial">"Best salon in town!"</div>
+    <div class="testimonial">"Very professional staff."</div>
+  </div>
+</section>
+
+<section>
+  <h2>Location 📍</h2>
+
+  <iframe 
+    src="https://maps.google.com/maps?q=your%20location&t=&z=13&ie=UTF8&iwloc=&output=embed"
+    width="100%" height="300" style="border:0;">
+  </iframe>
+</section>
+
+<section id="contact">
+  <h2>Book Appointment</h2>
+
+  <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
+
+  <a href="tel:+91XXXXXXXXXX" class="btn">📞 Call</a>
+  <a href="https://wa.me/91XXXXXXXXXX" class="btn">💬 WhatsApp</a>
+</section>
+
+<footer>
+  <p>© 2026 GlowUp Salon • All rights reserved</p>
+</footer>
+
+</body>
+</html>
