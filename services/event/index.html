@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elite Events</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+}
+
+/* NAV */
+nav {
+  text-align: center;
+  background: #020617;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(to right, #7c3aed, #c084fc);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 25px;
+  background: #020617;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+/* SECTION */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #c084fc;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* CARD */
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* GALLERY */
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  font-style: italic;
+}
+
+/* FOOTER */
+footer {
+  background: #020617;
+  padding: 20px;
+  text-align: center;
+  color: #aaa;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Elite Events 🎉</h1>
+  <p>We Make Your Moments Unforgettable</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#services">Services</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+  <h1>Creating Magical Experiences ✨</h1>
+  <p>Weddings • Corporate • Parties</p>
+
+  <a href="#contact" class="btn">Book Now</a>
+  <a href="https://wa.me/91XXXXXXXXXX" class="btn">WhatsApp</a>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>💍 Weddings</h3>
+      <p>Complete wedding planning & decoration</p>
+    </div>
+
+    <div class="card">
+      <h3>🏢 Corporate Events</h3>
+      <p>Professional business events & conferences</p>
+    </div>
+
+    <div class="card">
+      <h3>🎂 Birthday Parties</h3>
+      <p>Fun & memorable birthday celebrations</p>
+    </div>
+
+    <div class="card">
+      <h3>🎤 Stage Shows</h3>
+      <p>Live events, shows & entertainment</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="portfolio">
+  <h2>Our Work</h2>
+
+  <div class="grid gallery">
+    <img src="https://via.placeholder.com/300">
+    <img src="https://via.placeholder.com/300">
+    <img src="https://via.placeholder.com/300">
+  </div>
+</section>
+
+<section>
+  <h2>Why Choose Us</h2>
+
+  <div class="grid">
+    <div class="card">✔ Experienced Team</div>
+    <div class="card">✔ Affordable Packages</div>
+    <div class="card">✔ Creative Designs</div>
+    <div class="card">✔ On-Time Delivery</div>
+  </div>
+</section>
+
+<section>
+  <h2>Client Reviews</h2>
+
+  <div class="grid">
+    <div class="testimonial">"Amazing wedding setup!"</div>
+    <div class="testimonial">"Very professional service."</div>
+    <div class="testimonial">"Highly recommended!"</div>
+  </div>
+</section>
+
+<section>
+  <h2>Location 📍</h2>
+
+  <iframe 
+    src="https://maps.google.com/maps?q=your%20location&t=&z=13&ie=UTF8&iwloc=&output=embed"
+    width="100%" height="300" style="border:0;">
+  </iframe>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+
+  <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
+
+  <a href="tel:+91XXXXXXXXXX" class="btn">📞 Call</a>
+  <a href="https://wa.me/91XXXXXXXXXX" class="btn">💬 WhatsApp</a>
+</section>
+
+<footer>
+  <p>© 2026 Elite Events • All rights reserved</p>
+</footer>
+
+</body>
+</html>
